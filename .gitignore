@@ -1,0 +1,7 @@
+node_modules/
+serviceAccount.json
+serviceAccount.json.json
+package.json
+package-lock.json
+.firebase/
+*.log
