@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expériences et Aventures — Visit Siliana</title>
+  <link rel="stylesheet" href="../css/style.css?v=9">
+</head>
+<body>
+<header id="header">
+  <div class="container">
+    <nav class="nav-inner">
+      <a href="../index.html" class="nav-logo"><img src="../images/logo.avif" alt="Visit Siliana"></a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="../index.html" class="nav-link" data-i18n="nav_home">Accueil</a></li>
+        <li class="has-dropdown">
+          <a href="#" class="nav-link dropdown-toggle" data-i18n="nav_explore">Explore Siliana</a>
+          <ul class="dropdown-menu">
+            <li><a href="experiences.html" data-i18n="nav_experiences">Expériences et aventures</a></li>
+            <li><a href="patrimoines.html" data-i18n="nav_patrimoines">Histoires et Patrimoines</a></li>
+            <li><a href="hebergements.html" data-i18n="nav_hebergements">Hébergements Alternatifs</a></li>
+            <li><a href="gastronomie.html" data-i18n="nav_gastronomie">Gastronomies Locales</a></li>
+            <li><a href="artisanat.html" data-i18n="nav_artisanat">Artisanat</a></li>
+            <li><a href="evenements.html" data-i18n="nav_evenements">Évènements</a></li>
+          </ul>
+        </li>
+        <li><a href="../index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+        <li class="lang-switcher nav-lang"><button class="lang-btn active" data-lang="fr">FR</button><button class="lang-btn" data-lang="ar">AR</button><button class="lang-btn" data-lang="en">EN</button></li>
+      </ul>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="lang-switcher"><button class="lang-btn active" data-lang="fr">FR</button><button class="lang-btn" data-lang="ar">AR</button><button class="lang-btn" data-lang="en">EN</button></div>
+        <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <div class="breadcrumb"><a href="../index.html" data-i18n="nav_home">Accueil</a><span>›</span><span data-i18n="nav_experiences">Expériences et aventures</span></div>
+    <h1 data-i18n="card_experiences_title">Expériences et Aventures</h1>
+    <p data-i18n="card_experiences_text">Vivez des moments uniques au cœur de la nature de Siliana.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="container">
+    <div class="activities-grid">
+      <div class="activity-card reveal">
+        <img src="../images/card-escalade.avif" alt="Escalade" loading="lazy">
+        <div class="activity-overlay">
+          <h3 data-i18n="act_escalade">Escalade</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;margin-bottom:8px;">30 DT / pers · 6h · Aïn Boussaâdia</p>
+          <a href="escalade.html"><span data-i18n="act_discover">Découvrir</span> →</a>
+        </div>
+      </div>
+      <div class="activity-card reveal">
+        <img src="../images/card-randonnee.avif" alt="Randonnée" loading="lazy">
+        <div class="activity-overlay">
+          <h3 data-i18n="act_randonnee">Randonnée</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;margin-bottom:8px;">20 DT / pers · 6h · Mont Bargou</p>
+          <a href="randonnee.html"><span data-i18n="act_discover">Découvrir</span> →</a>
+        </div>
+      </div>
+      <div class="activity-card reveal">
+        <img src="../images/card-speleologie.avif" alt="Spéléologie" loading="lazy">
+        <div class="activity-overlay">
+          <h3 data-i18n="act_speleologie">Spéléologie</h3>
+          <p style="color:rgba(255,255,255,0.8);font-size:0.9rem;margin-bottom:8px;">50 DT / pers · 6h · Jbel Serj</p>
+          <a href="speleologie.html"><span data-i18n="act_discover">Découvrir</span> →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-bottom">
+      <span>© 2025 Visit Siliana. <span data-i18n="footer_rights">Tous droits réservés</span>.</span>
+      <span data-i18n="footer_made">Développé avec ♥ pour Siliana</span>
+    </div>
+  </div>
+</footer>
+<script src="../js/i18n.js?v=9"></script>
+<script src="../js/main.js?v=9"></script>
+</body>
+</html>

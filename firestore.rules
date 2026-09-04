@@ -1,0 +1,32 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    match /reviews/{id} {
+      // Lecture publique : uniquement les avis approuvés (modération)
+      allow read: if resource.data.status == 'approved';
+
+      // Création publique : forcée en 'pending' + champs validés
+      allow create: if request.resource.data.keys().hasOnly(
+                       ['activity','name','email','rating','text','status','createdAt'])
+        && request.resource.data.status == 'pending'
+        && request.resource.data.activity is string
+        && request.resource.data.activity.size() > 0
+        && request.resource.data.activity.size() <= 40
+        && request.resource.data.name is string
+        && request.resource.data.name.size() > 0
+        && request.resource.data.name.size() <= 50
+        && request.resource.data.email is string
+        && request.resource.data.email.size() <= 100
+        && request.resource.data.rating is number
+        && request.resource.data.rating >= 1
+        && request.resource.data.rating <= 5
+        && request.resource.data.text is string
+        && request.resource.data.text.size() > 0
+        && request.resource.data.text.size() <= 700;
+
+      // Modération (approuver/supprimer) : uniquement via la console Firebase
+      allow update, delete: if false;
+    }
+  }
+}
