@@ -6,10 +6,10 @@
 //  l'envoi/affichage réel des avis est désactivé.
 // ============================================================
 window.FIREBASE_CONFIG = {
-  apiKey: "A_REMPLIR",
-  authDomain: "A_REMPLIR.firebaseapp.com",
-  projectId: "A_REMPLIR",
-  storageBucket: "A_REMPLIR.appspot.com",
-  messagingSenderId: "A_REMPLIR",
-  appId: "A_REMPLIR"
+  apiKey: "AIzaSyD5XJMuEi5wITHh0FBpusT1gvKTQE8AxBA",
+  authDomain: "visit-siliana.firebaseapp.com",
+  projectId: "visit-siliana",
+  storageBucket: "visit-siliana.firebasestorage.app",
+  messagingSenderId: "817015660649",
+  appId: "1:817015660649:web:31c376e6597cb40f93c2f8"
 };

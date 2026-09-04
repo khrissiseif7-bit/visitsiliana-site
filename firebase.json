@@ -6,7 +6,8 @@
       ".firebaserc",
       ".gitignore",
       "README.md",
-      "**/.*"
+      "**/.*",
+      "**/.git/**"
     ],
     "cleanUrls": true,
     "trailingSlash": false,

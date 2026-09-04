@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "TON_PROJET_ID"
-  }
+    "default": "visit-siliana"
+  },
+  "targets": {},
+  "etags": {}
 }
